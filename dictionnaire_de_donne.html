@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionnaire de Données Réduit - KremElect</title>
+</head>
+<body>
+
+    <h1>Esquisse du Dictionnaire de Données</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Code Attribut</th>
+                <th>Libellé</th>
+                <th>Type de donnée</th>
+                <th>Taille / Format</th>
+                <th>Nature</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="code">EMP_RAISON_SOC</td>
+                <td>Raison sociale de l'entreprise</td>
+                <td>Texte (VARCHAR)</td>
+                <td>100</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">EMP_NIU</td>
+                <td>Numéro d'Identifiant Unique (fictif)</td>
+                <td>Texte (VARCHAR)</td>
+                <td>30</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">CLI_CODE</td>
+                <td>Code unique du client</td>
+                <td>Texte (VARCHAR)</td>
+                <td>20</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">CLI_NOM</td>
+                <td>Nom ou raison sociale du client</td>
+                <td>Texte (VARCHAR)</td>
+                <td>100</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">ART_REF</td>
+                <td>Référence unique de l'article ou service</td>
+                <td>Texte (VARCHAR)</td>
+                <td>30</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">ART_DESIGNATION</td>
+                <td>Désignation de l'appareil ou prestation</td>
+                <td>Texte (VARCHAR)</td>
+                <td>150</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">ART_PU_HT</td>
+                <td>Prix unitaire HT de base (FCFA)</td>
+                <td>Numérique (NUMERIC)</td>
+                <td>(14,0)</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">DOC_NUMERO</td>
+                <td>Numéro officiel du document (Devis/Facture)</td>
+                <td>Texte (VARCHAR)</td>
+                <td>30</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">DOC_TYPE</td>
+                <td>Type de document (DEVIS, FACTURE, AVOIR)</td>
+                <td>Texte (VARCHAR)</td>
+                <td>20</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">DOC_DATE</td>
+                <td>Date d'émission du document</td>
+                <td>Date (DATE)</td>
+                <td>-</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">LIG_QUANTITE</td>
+                <td>Quantité ou volume commandé</td>
+                <td>Numérique (NUMERIC)</td>
+                <td>12</td>
+                <td>Élémentaire</td>
+            </tr>
+            <tr>
+                <td class="code">LIG_MONTANT_HT</td>
+                <td>Montant HT de la ligne de document</td>
+                <td>Numérique (NUMERIC)</td>
+                <td>14</td>
+                <td>Calculé</td>
+            </tr>
+            <tr>
+                <td class="code">DOC_TOTAL_TTC</td>
+                <td>Montant total TTC global (FCFA)</td>
+                <td>Numérique (NUMERIC)</td>
+                <td>14</td>
+                <td>Calculé</td>
+            </tr>
+            <tr>
+                <td class="code">DOC_MNT_LETTRES</td>
+                <td>Montant TTC en toutes lettres</td>
+                <td>Texte (VARCHAR)</td>
+                <td>255</td>
+                <td>Calculé</td>
+            </tr>
+            <tr>
+                <td class="code">REG_MONTANT</td>
+                <td>Montant du règlement perçu (FCFA)</td>
+                <td>Numérique (NUMERIC)</td>
+                <td>14</td>
+                <td>Élémentaire</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
